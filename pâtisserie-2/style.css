@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e1;
+    color: #5c4033;
+}
+
+header {
+    background-color: #8B5E3C; /* Marron chocolat */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.produits {
+    padding: 40px 0;
+}
+
+.produit {
+    background-color: #fff;
+    border: 1px solid #e3d4b9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produit h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.produit p {
+    font-size: 1em;
+    color: #7f6a4b;
+}
+
+.produit .prix {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #8c5d3e;
+}
+
+.produits .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produit {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.produit img {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #8B5E3C; /* Marron chocolat */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .produit {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .produit {
+        width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1e1; /* Couleur beige */
+    color: #333; /* Texte sombre pour contraster */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #8B5E3C; /* Marron chocolat */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Sections des catégories (Pâtisserie, Boucherie, Plomberie) */
+.category {
+    padding: 50px 0;
+    background-color: #8B8B7A; /* Gris taupe */
+    text-align: center;
+}
+
+.category h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.category p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category .btn {
+    padding: 10px 20px;
+    background-color: #D1A15E; /* Or/cuivre */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.category .btn:hover {
+    background-color: #B58C4F; /* Or plus foncé au survol */
+}
+
+/* Section de contact */
+.contact {
+    padding: 50px 0;
+    background-color: #F0D1D1; /* Rose poudré */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background-color: #8B5E3C; /* Marron chocolat */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: #6E4B3A; /* Marron plus foncé au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #8B5E3C; /* Marron chocolat */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}

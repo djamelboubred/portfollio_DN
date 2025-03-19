@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fffaf0;
+}
+header {
+    background: #d2691e;
+    color: white;
+    padding: 20px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.colorblack {
+    color: black;
+}
+.hero {
+    background: url('https://source.unsplash.com/1200x600/?bakery') no-repeat center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+.btn {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.about, .products, .contact {
+    padding: 50px 20px;
+}
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background: #d2691e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background: #d2691e;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
