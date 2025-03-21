@@ -1,0 +1,148 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4e1;
+    color: #6b3e26;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* En-tête */
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Carrousel */
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement si nécessaire */
+    width: 100%; /* Assurez-vous que la section prend toute la largeur */
+    animation: scroll 16s infinite linear;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 10px;
+    background-color: #fce4ec; /* Couleur douce rappelant les bonbons */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.carousel-item {
+    background: #ff69b4;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Grille de produits */
+.grid-produits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.produit {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produit img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produit p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Section description */
+.description {
+    background: #ffd1dc;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/* Formulaire de contact */
+.contact {
+    background: #ffdab9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre le formulaire horizontalement */
+    align-items: center; /* Centre le formulaire verticalement */
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    width: auto; /* Limite la largeur du formulaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre discrète pour plus de profondeur */
+}
+
+/* Champs de texte (input, textarea) réduits */
+.contact input, .contact textarea {
+    width: 90%; /* Réduit la largeur des champs à 90% */
+    padding: 8px; /* Réduit la taille du padding */
+    margin: 10px 0;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    font-size: 14px; /* Réduit la taille du texte dans les champs */
+}
+
+.contact textarea {
+    resize: vertical; /* Permet de redimensionner la zone de texte uniquement verticalement */
+    height: 100px; /* Réduit la taille de la zone de texte */
+}
+
+.contact button {
+    background: #ff69b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%; /* Le bouton prend toute la largeur du formulaire */
+    font-size: 18px; /* Taille du texte du bouton */
+}
+
+.contact button:hover {
+    background: #d14786;
+}
+
+.contact label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Assure que les labels prennent toute la largeur */
+}
+
+
+
+
