@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f1e1; /* Couleur beige */
+    font-family: 'Roboto', sans-serif; /* Police moderne */
+    background-color: #f5f5f5; /* Gris clair */
     color: #333; /* Texte sombre pour contraster */
     line-height: 1.6;
 }
@@ -19,38 +19,47 @@ body {
 
 /* Header */
 header {
-    background-color: #8B5E3C; /* Marron chocolat */
+    background-color: #2C3E50; /* Bleu foncé élégant */
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 80px 0; /* Plus d'espace pour aérer */
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 header p {
-    font-size: 1.2em;
-    max-width: 700px;
+    font-size: 1.3em;
+    max-width: 800px;
     margin: 0 auto;
+    line-height: 1.8;
 }
 
-/* Sections des catégories (Pâtisserie, Boucherie, Plomberie) */
+/* Sections des catégories */
 .category {
-    padding: 50px 0;
-    background-color: #8B8B7A; /* Gris taupe */
+    padding: 60px 0;
+    background-color: #ecf0f1; /* Gris très clair */
     text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #bdc3c7; /* Gris moyen au survol */
 }
 
 .category h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #34495E; /* Bleu/gris profond */
 }
 
 .category p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 30px;
+    color: #7f8c8d; /* Gris neutre pour les paragraphes */
 }
 
 .btn-container {
@@ -60,55 +69,60 @@ header p {
 }
 
 .category .btn {
-    padding: 10px 20px;
-    background-color: #D1A15E; /* Or/cuivre */
+    padding: 12px 25px;
+    background-color: #3498db; /* Bleu vif */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 50px; /* Bordure arrondie */
+    font-weight: 600;
+    text-transform: uppercase; /* Majuscules pour plus de style */
+    transition: background-color 0.3s ease, transform 0.2s ease;
     display: inline-block;
 }
 
 .category .btn:hover {
-    background-color: #B58C4F; /* Or plus foncé au survol */
+    background-color: #2980b9; /* Bleu foncé au survol */
+    transform: translateY(-3px); /* Effet de survol */
 }
 
-/* Section de contact */
+/* Section Contact */
 .contact {
-    padding: 50px 0;
-    background-color: #F0D1D1; /* Rose poudré */
+    padding: 60px 0;
+    background-color: #2980b9; /* Orange chaud */
     text-align: center;
+    color: white;
 }
 
 .contact h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     max-width: 700px;
     margin: 0 auto 30px;
 }
 
 .contact .btn {
-    padding: 10px 20px;
-    background-color: #8B5E3C; /* Marron chocolat */
+    padding: 12px 30px;
+    background-color: #e74c3c; /* Rouge éclatant */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact .btn:hover {
-    background-color: #6E4B3A; /* Marron plus foncé au survol */
+    background-color: #c0392b; /* Rouge plus foncé au survol */
+    transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-    background-color: #8B5E3C; /* Marron chocolat */
+    background-color: #34495E; /* Bleu foncé */
     color: white;
     text-align: center;
     padding: 20px 0;
