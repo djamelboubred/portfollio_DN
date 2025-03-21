@@ -5,61 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Djamel Boubred</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Bienvenue sur mon Portfolio</h1>
-            <p>Je suis Djamel Boubred, un créateur passionné de sites web et de projets numériques. Explorez mes réalisations et contactez-moi pour collaborer ensemble.</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Section Pâtisserie -->
-        <section class="category">
-            <div class="container">
-                <h2>Pâtisserie</h2>
-                <p>Découvrez mes projets dans le domaine de la pâtisserie, réalisés avec une attention particulière aux détails et à l'esthétique.</p>
-                <div class="btn-container">
-                    <a href="https://djamelboubred.github.io/portfollio_DN/p%C3%A2tisserie-1/" class="btn">Voir le projet Pâtisserie 1</a>
-                    <a href="https://djamelboubred.github.io/portfollio_DN/p%C3%A2tisserie-2/" class="btn">Voir le projet Pâtisserie 2</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Section Création -->
-        <section class="category">
-            <div class="container">
-                <h2>Création</h2>
-                <p>J'ai également créé des projets pour des professionnels de l'artisanat, mettant en avant des produits de qualité et un design fonctionnel.</p>
-                <div class="btn-container">
-                    <a href="https://djamelboubred.github.io/portfollio_DN/Creation-1/" class="btn">Voir le projet Création 1</a>
-                    <a href="https://djamelboubred.github.io/portfollio_DN/Creation-2/" class="btn">Voir le projet Création 2</a>
-                </div>
-            </div>
-        </section>
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>À la recherche d’un site web sur mesure, pensé pour répondre à vos besoins ? 
 
-        <!-- Section Plomberie -->
-        <section class="category">
-            <div class="container">
-                <h2>Plomberie</h2>
-                <p>Découvrez mes projets dans le domaine de la plomberie, avec un design simple et professionnel pour les artisans du secteur.</p>
-                <div class="btn-container">
-                    <a href="#" class="btn">Voir le projet Plomberie 1</a>
-                    <a href="#" class="btn">Voir le projet Plomberie 2</a>
+                <br>
+                Je mets mon expertise au service de vos projets pour créer des sites uniques, performants et esthétiques.  
+                <br>
+                Mon objectif ? 
+                <br>
+                Donner vie à vos idées en alliant créativité et technologie.  
+                Que vous soyez un entrepreneur, une entreprise ou un particulier, je vous accompagne pour créer une identité numérique forte et impactante.
+                <br>
+                Découvrez mes réalisations et parlons de votre projet !
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="projects-content">
+                <div class="image-container">
+                    <img src="img/portfolio.svg" alt="Aperçu Portfolio">
+                </div>
+                <div class="projects-list">
+                    <h2>Mes Projets</h2>
+                    <p>Découvrez mes différentes réalisations et cliquez pour les explorer.</p>
+                    <div class="btn-grid">
+                        <a href="https://djamelboubred.github.io/portfollio_DN/p%C3%A2tisserie-1/" class="btn">Projet 1</a>
+                        <a href="https://djamelboubred.github.io/portfollio_DN/p%C3%A2tisserie-2/" class="btn">Projet 2</a>
+                        <a href="https://djamelboubred.github.io/portfollio_DN/Creation-1/" class="btn">Projet 3</a>
+                        <a href="https://djamelboubred.github.io/portfollio_DN/Creation-2/" class="btn">Projet 4</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Section Contact -->
-        <section class="contact">
-            <div class="container">
-                <h2>Contactez-moi</h2>
-                <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos idées et voir comment je peux vous aider à les concrétiser.</p>
-                <a href="mailto:djamelboubred@example.com" class="btn">Contactez-moi</a>
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <p>Vous avez un projet en tête ? Contactez-moi pour en discuter.</p>
+            <a href="mailto:djamelboubred@example.com" class="btn">Envoyer un email</a>
+            <div class="social-links">
+                <a href="https://www.instagram.com/toncompte" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/toncompte" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <div class="container">

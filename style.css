@@ -1,130 +1,191 @@
-/* Réinitialisation des marges et des paddings */
+/* Réinitialisation des styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Police moderne */
-    background-color: #f5f5f5; /* Gris clair */
-    color: #333; /* Texte sombre pour contraster */
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #2C3E50; /* Bleu foncé élégant */
+    background-color: #2C3E50;
     color: white;
     text-align: center;
-    padding: 80px 0; /* Plus d'espace pour aérer */
+    padding: 40px 0;
 }
 
 header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-header p {
-    font-size: 1.3em;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Sections des catégories */
-.category {
-    padding: 60px 0;
-    background-color: #ecf0f1; /* Gris très clair */
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.category:hover {
-    background-color: #bdc3c7; /* Gris moyen au survol */
-}
-
-.category h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #34495E; /* Bleu/gris profond */
+    font-weight: bold;
 }
 
-.category p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #7f8c8d; /* Gris neutre pour les paragraphes */
+nav ul {
+    list-style: none;
+    margin-top: 15px;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
 }
 
-.category .btn {
-    padding: 12px 25px;
-    background-color: #3498db; /* Bleu vif */
+nav ul li a {
     color: white;
     text-decoration: none;
-    border-radius: 50px; /* Bordure arrondie */
-    font-weight: 600;
-    text-transform: uppercase; /* Majuscules pour plus de style */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
-.category .btn:hover {
-    background-color: #2980b9; /* Bleu foncé au survol */
-    transform: translateY(-3px); /* Effet de survol */
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Section À propos */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Section projets */
+.projects-section {
+    padding: 60px 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #A3C1DA;
+    
+}
+
+.projects-content {
+    display: flex;
+    align-items: center;
+    gap: 250px; /* Plus d’espace entre l’image et les projets */
+    max-width: 1600px;
+}
+
+/* Image plus grande alignée à gauche */
+.image-container {
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Projets */
+.projects-list {
+    flex: 1;
+    text-align: left;
+}
+
+.projects-list h2 {
+    font-size: 2.2em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.projects-list p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Grille des boutons 2 par ligne */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
 }
 
 /* Section Contact */
 .contact {
     padding: 60px 0;
-    background-color: #2980b9; /* Orange chaud */
-    text-align: center;
+    background-color: #2C3E50;
     color: white;
+    text-align: center;
 }
 
 .contact h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 1.3em;
-    max-width: 700px;
-    margin: 0 auto 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .contact .btn {
     padding: 12px 30px;
-    background-color: #e74c3c; /* Rouge éclatant */
-    color: white;
+    background-color: #e74c3c;
     text-decoration: none;
     border-radius: 50px;
-    font-weight: 600;
+    font-weight: bold;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .contact .btn:hover {
-    background-color: #c0392b; /* Rouge plus foncé au survol */
+    background-color: #c0392b;
     transform: translateY(-3px);
 }
 
-/* Footer */
-footer {
-    background-color: #34495E; /* Bleu foncé */
+/* Liens Réseaux sociaux */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #3498db;
 }
