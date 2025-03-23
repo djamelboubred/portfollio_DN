@@ -138,6 +138,65 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+
+
+/* Mes Templates */
+
+/* Image plus grande alignée à gauche */
+.image-container-new {
+    flex-shrink: 0;
+}
+
+.image-container-new img {
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Projets */
+.projects-list-new {
+    flex: 1;
+    text-align: left;
+}
+
+.projects-list-new h2 {
+    font-size: 2.2em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.projects-list-new p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Grille des boutons 2 par ligne */
+.btn-grid-new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+}
+
+.btn-new {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.btn-new:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
 /* Section Contact */
 .contact {
     padding: 60px 0;
@@ -242,6 +301,21 @@ nav ul li a:hover {
     .btn-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    .projects-content-new {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .image-container-new img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .btn-grid-new {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
 
 /* ===== MEDIA QUERIES POUR MOBILE (480px et moins) ===== */
@@ -291,7 +365,24 @@ nav ul li a:hover {
         padding: 10px 20px;
         font-size: 1em;
     }
+    .projects-list-new {
+        text-align: center;
+    }
 
+    .btn-grid-new {
+        grid-template-columns: repeat(1, 1fr); /* Un seul bouton par ligne */
+    }
+
+    .image-container-new img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Ajuster les boutons */
+    .btn-new {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
     /* Ajuster la section contact */
     .social-icons {
         flex-direction: column;
