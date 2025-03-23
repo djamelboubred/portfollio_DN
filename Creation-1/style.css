@@ -124,3 +124,71 @@ footer button:hover {
     margin-top: 15px;
     font-size: 14px;
 }
+
+/* 🌟 Media Queries pour la réactivité */
+
+/* 📱 Ajustement pour les petits écrans */
+@media (max-width: 768px) {
+
+    /* Menu de navigation : Passage en colonne */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Carrousel : Réduire la largeur pour s'adapter aux petits écrans */
+    .carousel {
+        width: 90%;
+        max-width: 100%; /* S'assurer que le carrousel occupe toute la largeur */
+    }
+
+    .carousel-images {
+        width: 500%; /* Augmenter la largeur de l'animation pour s'adapter à plus d'éléments */
+    }
+
+    /* Formulaire de contact : Réduire la largeur des champs */
+    footer input, footer textarea {
+        width: 90%; /* Augmente la largeur pour s'adapter à l'écran */
+        max-width: 300px;
+    }
+
+    footer button {
+        width: 90%; /* Le bouton prend toute la largeur du formulaire */
+    }
+
+    /* Copyright : Réduire la taille du texte */
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+/* 👀 Ajustement pour très petits écrans (par exemple, les smartphones très petits) */
+@media (max-width: 480px) {
+
+    /* Menu de navigation : Augmenter la taille des liens pour les petits écrans */
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Carrousel : Ajuster la taille des images pour mieux s'adapter */
+    .carousel-images img {
+        height: 250px; /* Réduire la taille des images */
+    }
+
+    /* Réduire la taille du texte du carrousel */
+    .slide p {
+        font-size: 14px;
+    }
+
+    /* Footer : Réduire encore la taille des champs de formulaire */
+    footer input, footer textarea {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    footer button {
+        width: 85%;
+    }
+}

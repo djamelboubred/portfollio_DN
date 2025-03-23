@@ -143,6 +143,125 @@ header {
     width: 100%; /* Assure que les labels prennent toute la largeur */
 }
 
+/* 📱 Adaptation pour les écrans < 768px */
+@media (max-width: 768px) {
 
+    /* Ajustement du carrousel */
+    .carousel-container {
+        overflow: hidden; /* Évite le dépassement horizontal */
+    }
+    
+    .carousel {
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .carousel-item {
+        min-width: 150px;
+        padding: 10px;
+    }
+
+    /* Grille des produits : 2 colonnes au lieu de 3 */
+    .grid-produits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Ajustement de la description */
+    .description {
+        padding: 15px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    /* Formulaire de contact plus compact */
+    .contact {
+        max-width: 100%;  /* Évite qu'elle dépasse la largeur totale */
+        padding: 30px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative; /* Garde sa position normale */
+        overflow: hidden; /* Prévient tout dépassement */
+    }
+
+    .contact input, .contact textarea {
+        width: 90%; /* Les champs prennent toute la largeur */
+        font-size: 12px; /* Texte plus petit */
+    }
+
+    .contact button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* 📱 Ultra petit écran (mobile < 480px) */
+@media (max-width: 480px) {
+        /* Carrousel */
+    .carousel-container {
+        display: flex;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement si nécessaire */
+        width: 100%;
+        overflow: hidden; /* Pour cacher ce qui dépasse */
+        position: relative; /* Assure que l'animation reste contenue dans le bloc */
+    }
+    
+    .carousel {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        background-color: #fce4ec;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: max-content; /* Ajuste la largeur en fonction du contenu */
+        animation: scroll 25s infinite linear; /* Durée de l'animation ajustée pour plus de temps */
+    }
+    
+    .carousel-item {
+        background: #ff69b4;
+        color: white;
+        padding: 15px;
+        border-radius: 15px;
+        margin: 0 10px;
+        min-width: 200px; /* Largeur minimale ajustée */
+        text-align: center;
+    }
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); } /* Ajuste la distance du défilement */
+    }
+    
+
+   
+   
+   
+    /* Produits en 1 colonne */
+    .grid-produits {
+        grid-template-columns: 1fr;
+    }
+
+    /* Carrousel plus compact */
+    .carousel-item {
+        min-width: 120px;
+        padding: 8px;
+    }
+
+    /* Réduction des marges globales */
+    .description, .contact {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .contact button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
 
 

@@ -79,7 +79,7 @@ nav ul li a:hover {
 .projects-content {
     display: flex;
     align-items: center;
-    gap: 250px; /* Plus d’espace entre l’image et les projets */
+    gap: 150px; /* Plus d’espace entre l’image et les projets */
     max-width: 1600px;
 }
 
@@ -130,6 +130,7 @@ nav ul li a:hover {
     text-align: center;
     transition: background-color 0.3s, transform 0.2s;
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .btn:hover {
@@ -196,4 +197,117 @@ nav ul li a:hover {
 
 .bi {
     font-size: 1.5em;
+}
+
+/* ===== MEDIA QUERIES POUR TABLETTE (768px et moins) ===== */
+@media (max-width: 768px) {
+    /* Ajuster l'entête */
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Réduire la taille du texte */
+    .about h2, .projects-list h2, .contact h2 {
+        font-size: 2em;
+    }
+
+    .about p, .projects-list p, .contact p {
+        font-size: 1.1em;
+    }
+
+    /* Ajuster la section projets */
+    .projects-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .btn-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* ===== MEDIA QUERIES POUR MOBILE (480px et moins) ===== */
+@media (max-width: 480px) {
+    /* Ajuster l'entête */
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    /* Réduire encore plus les tailles */
+    .about h2, .projects-list h2, .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .about p, .projects-list p, .contact p {
+        font-size: 1em;
+    }
+
+    /* Centrer le contenu des projets */
+    .projects-list {
+        text-align: center;
+    }
+
+    .btn-grid {
+        grid-template-columns: repeat(1, 1fr); /* Un seul bouton par ligne */
+    }
+
+    .image-container img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Ajuster les boutons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Ajuster la section contact */
+    .social-icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    /* Ajustement de la taille des boutons sociaux */
+    .social-link {
+        font-size: 1em; /* Réduction de la taille du texte */
+        padding: 8px 15px; /* Moins d'espace autour du texte */
+        border-radius: 8px; /* Coins légèrement arrondis */
+        width: 50%;
+        margin-left:25%;
+    }
+    
+    /* Ajustement de l'icône pour qu'elle ne soit pas trop grande */
+    .bi {
+        font-size: 1.2em;
+    }
 }
