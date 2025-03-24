@@ -252,6 +252,14 @@ nav ul li a:hover {
 }
 
 /* Carte Service */
+.service-link {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: inherit; /* Garde la couleur du texte */
+    display: flex;
+    flex: 1; /* Permet aux éléments de prendre la même taille */
+    max-width: 300px; /* Définit une largeur maximale*/
+}
+
 .service-card {
     background: #fff;
     padding: 20px;
@@ -280,6 +288,50 @@ nav ul li a:hover {
 
 /* Effet au survol */
 .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur flexbox pour aligner les éléments */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cartes des avantages */
+.about-item {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.about-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Effet au survol */
+.about-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -314,7 +366,7 @@ nav ul li a:hover {
 }
 
 /* ===== MEDIA QUERIES POUR TABLETTE (768px et moins) ===== */
-@media (max-width: 768px) {
+@media (max-width: 1196px) {
     /* Ajuster l'entête */
     header h1 {
         font-size: 2em;
