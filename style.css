@@ -70,7 +70,7 @@ nav ul li a:hover {
 .projects-section {
     padding: 60px 50px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background: #A3C1DA;
     
@@ -81,6 +81,7 @@ nav ul li a:hover {
     align-items: center;
     gap: 150px; /* Plus d’espace entre l’image et les projets */
     max-width: 1600px;
+
 }
 
 /* Image plus grande alignée à gauche */
@@ -89,7 +90,7 @@ nav ul li a:hover {
 }
 
 .image-container img {
-    width: 700px;
+    width: 700px; /*700px*/
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -227,6 +228,60 @@ nav ul li a:hover {
 .contact .btn:hover {
     background-color: #c0392b;
     transform: translateY(-3px);
+}
+
+/* Section Services */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Conteneur des services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Carte Service */
+.service-card {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Effet au survol */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Liens Réseaux sociaux */
