@@ -12,6 +12,7 @@
     <header>
         <div class="container">
             <h1><a href="index.html">Votre site mérite le meilleur</a></h1>
+            <button class="menu-toggle">☰ Menu</button>
             <nav>
                 <ul>
                     <li><a href="index.html#about">À propos</a></li>
@@ -117,4 +118,9 @@
         </div>
     </footer>
 </body>
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector("nav ul").classList.toggle("active");
+    });
+</script>
 </html>

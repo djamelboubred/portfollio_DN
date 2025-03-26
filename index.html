@@ -12,6 +12,7 @@
     <header>
         <div class="container">
             <h1><a href="index.html">Votre site mérite le meilleur</a></h1>
+            <button class="menu-toggle">☰ Menu</button>
             <nav>
                 <ul>
                     <li><a href="#about">À propos</a></li>
@@ -95,6 +96,7 @@
                 <i class="fas fa-laptop-code"></i>
                 <h3>Développement Web</h3>
                 <p>Création de sites web modernes et performants adaptés à vos besoins.</p>
+                <br>
                 <p class="retour">Description</p>
             </div>
         </a>
@@ -104,6 +106,7 @@
                 <i class="fas fa-laptop-code"></i>
                 <h3>Applications Mobiles</h3>
                 <p>Développement d’applications mobiles intuitives et responsives.</p>
+                <br>
                 <p class="retour">Description</p>
             </div>
         </a>
@@ -122,6 +125,7 @@
                 <i class="fas fa-laptop-code"></i>
                 <h3>Maintenance</h3>
                 <p>Maintenace et modification de vos produits digitaux.</p>
+                <br>
                 <p class="retour">Description</p>
             </div>
         </a>
@@ -152,4 +156,9 @@
         </div>
     </footer>
 </body>
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector("nav ul").classList.toggle("active");
+    });
+</script>
 </html>
