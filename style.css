@@ -297,6 +297,53 @@ h1 a:hover {
     color: #7f8c8d;
 }
 
+.retour {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #8B5E3C;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid #8B5E3C;
+    box-shadow: 0 2px 4px rgba(139, 94, 60, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.retour::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #8B5E3C;
+    border-bottom: 2px solid #8B5E3C;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.retour:hover {
+    color: #fff;
+    background-color: #8B5E3C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 94, 60, 0.2);
+}
+
+.retour:hover::before {
+    border-color: #fff;
+}
+
+.retour:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(139, 94, 60, 0.1);
+}
+
 /* Effet au survol */
 .service-card:hover {
     transform: translateY(-5px);
