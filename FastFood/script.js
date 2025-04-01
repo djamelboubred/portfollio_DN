@@ -6,14 +6,14 @@ const menuData = {
             name: "Tacos Classic",
             description: "Viande au choix, sauce fromagère, frites",
             price: 7.50,
-            image: "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&q=80&w=1974"
+            image: "img/salade1.jpg"
         },
         {
             id: 2,
             name: "Tacos Royal",
             description: "Double viande, sauce fromagère, frites, sauce au choix",
             price: 9.50,
-            image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&q=80&w=1974"
+            image: "img/tacos.jpg"
         }
     ],
     burgers: [
@@ -22,7 +22,7 @@ const menuData = {
             name: "Cheese Burger",
             description: "Steak haché, cheddar, salade, tomate, oignon",
             price: 6.50,
-            image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1974"
+            image: "img/burgermenu.jpg"
         }
     ],
     menus: [
@@ -31,7 +31,7 @@ const menuData = {
             name: "Menu Tacos",
             description: "Tacos au choix + Frites + Boisson",
             price: 10.90,
-            image: "https://images.unsplash.com/photo-1561758033-7e924f619b47?auto=format&fit=crop&q=80&w=1974"
+            image: "img/menu1.jpg"
         }
     ],
     boissons: [
@@ -40,7 +40,7 @@ const menuData = {
             name: "Coca-Cola",
             description: "33cl",
             price: 2.50,
-            image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=1974"
+            image: "img/boisson.jpg"
         }
     ]
 };

@@ -168,7 +168,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1613564834361-9436948817d1?auto=format&fit=crop&q=80&w=2070');
+    background-image: url('img/pizza.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
